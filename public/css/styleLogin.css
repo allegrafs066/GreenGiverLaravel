@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #469846;
+    --secondary-color: #10281b;
+    --background-color: #111111;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),url("../img/mainbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.navbar {
+    padding: 20px 0 20px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .scrolling-active {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container .box-navbar img {
+    width: 170px;
+}
+
+.navbar .box-navbar .menu {
+    display: flex;
+    column-gap: 50px;
+}
+
+.navbar .box-navbar .menu li {
+    list-style: none;
+}
+
+.navbar .box-navbar .menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+
+.navbar .box-navbar .menu .active a {
+    background-color: var(--primary-color);
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: var(--primary-color);
+}
+
+form {
+        height: 400px;
+        width: 400px;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 135px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        padding: 50px 35px;
+}
+
+.login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.login .container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    column-gap: 300px;
+}
+
+.login .container form {
+    color: #ffffff;
+}
+
+.login .container form h1 {
+    font-size: 30px;
+    position: relative;
+    top: -32px;
+}
+
+.login .container .bio {
+    position: absolute;
+    top: 15px;
+}
+
+.login .container .bio h2 {
+    width: 200px;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    top: 70px;
+}
+
+.login .container .bio input {
+    background-color: #3b5748;
+    border-color: #ffffff;
+    border-radius: 5px;
+    height: 30px;
+    width: 328px;
+    position: absolute;
+    top: 105px;
+}
+
+.login .container form .bio .password label {
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    top: 145px;
+}
+
+.login .container form .bio .password input {
+    background-color: #3b5748;
+    border-color: #ffffff;
+    border-radius: 5px;
+    height: 30px;
+    width: 328px;
+    position: absolute;
+    top: 175px;
+}
+
+.login .container form .loginclick {
+    background-color: var(--primary-color);
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffff;
+    border-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top: 260px;
+    right: 145px; 
+    cursor: pointer;
+}
+
+.login .container form .signup p {
+    position: absolute;
+    top: 351px;
+    right: 165px;
+}
+
+.login .container form .signup a {
+    position: absolute;
+    color: var(--text-color);
+    top: 350px;
+    right: 92px;
+}
+
+footer {
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: semi-bold;
+}

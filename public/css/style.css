@@ -1,0 +1,292 @@
+:root {
+    --primary-color: #469846;
+    --secondary-color: #10281b;
+    --background-color: #111111;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),url("../img/mainbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.navbar {
+    padding: 20px 0 20px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .scrolling-active {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .box-navbar .logo {
+    width: 170px;
+}
+
+.navbar .box-navbar .menu {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .box-navbar .menu li {
+    list-style: none;
+}
+
+.navbar .box-navbar .menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+
+.navbar .box-navbar .menu .active a {
+    background-color: var(--primary-color);
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.hero .container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    column-gap: 300px;
+}
+
+.hero .container .box-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.hero .container .box-hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.hero .container .box-hero p {
+    font-size: 25px;
+    font-weight: regular;
+    color: var(--text-color);
+}
+
+.hero .container .box-hero a {
+    margin-top: 50px;
+    width: 350px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    filter: drop-shadow(5px 5px 10px var(--background-color));
+}
+
+.hero .container .box-hero a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.hero .container .info-gain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.hero .container .info-gain h2 {
+    width: 350px;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+.hero .container .info-gain h1 {
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-weight: semi-bold;
+    color: var(--text-color);
+    filter: drop-shadow(10px 10px 10px var(--background-color));
+}
+
+.wrap {
+    background-color: var(--secondary-color);
+    position: relative;
+    height: 75vh;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: -50px;
+    position: absolute;
+    background-color: var(--secondary-color);
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 0 0;
+}
+
+.mission .container {
+    display: flex;
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    column-gap: 150px;
+}
+
+.mission .container .img-mission {
+    width: 400px;
+    border-radius: 50px;
+    filter: drop-shadow(10px 10px 10px var(--background-color));
+}
+
+.mission .container .box-info {
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.mission .container .box-info h1 {
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.mission .container .box-info p {
+    font-size: 20px;
+    font-weight: regular;
+}
+
+.mission .container .box-info .mission-content-2 h1{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.mission .container .box-info .mission-content-2 .second-title {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.information {
+    display: flex;
+    background-color: var(--primary-color);
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.information .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.information .container .info-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.information .container .info-title h1 {
+    color: var(--secondary-color);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.information .container .info-title p{
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.information .container .box-info-card .info-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 160px;
+}
+
+.information .container .box-info-card .info-card .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    border-radius: 25px;
+    border-width: 4px;
+    padding: 20px 40px 20px 40px;
+    font-weight: semi-bold;
+}
+
+.information .container a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 5px 30px 5px 30px;
+    filter: drop-shadow(5px 5px 5px var(--background-color));
+}
+
+.information .container a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-weight: semi-bold;
+}
+

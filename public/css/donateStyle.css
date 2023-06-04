@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #469846;
+    --secondary-color: #10281b;
+    --background-color: #111111;
+    --text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-image: url("../img/navbarbackground.jpg");
+    background-size:cover;
+    padding: 20px 0 20px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .scrolling-active {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .box-navbar .logo {
+    width: 170px;
+}
+
+.navbar .box-navbar .menu {
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .box-navbar .menu li {
+    list-style: none;
+}
+
+.navbar .box-navbar .menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+
+.navbar .box-navbar .menu .active a {
+    background-color: var(--primary-color);
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: var(--primary-color);
+}
+
+.wrapper {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.wrapper .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .container .box-donate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color); 
+    width: 50%;
+    height: 856px;
+    border-radius: 0px 50px 50px 0;
+    gap: 80px;
+}
+
+.wrapper .container .box-donate .box-support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 150px;
+}
+
+.wrapper .container .box-donate .box-support .box-nama {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 5px;
+}
+
+.wrapper .container .box-donate .box-support .box-nama label{
+    font-size: 20px;
+}
+
+.wrapper .container .box-donate .box-support .box-nama input{
+    font-size: 20px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #3b5748;
+    border-color: #ffffff;
+}
+
+.wrapper .container .box-donate .box-support .box-amount {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 5px;
+}
+
+.wrapper .container .box-donate .box-support .box-amount label{
+    font-size: 20px;
+}
+
+.wrapper .container .box-donate .box-support .box-amount input{
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #3b5748;
+    border-color: #ffffff;
+}
+
+.wrapper .container .box-donate .box-support .box-amount {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 5px;
+}
+
+.wrapper .container .box-donate .box-support .box-nama {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .container .box-donate .box-support .box-amount {
+    display: flex;
+    flex-direction: column;
+}
+
+main .wrapper .container .img-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper .container .img-container .logo {
+    width: 500px;
+    height: 500px;
+}
+
+.wrapper .container .box-donate .box-support .wrapper-option {
+    position: relative;
+    min-width: 400px;
+    min-width: 250px;
+}
+
+.wrapper .container .box-donate .box-support .box-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.wrapper .container .box-donate .box-support p {
+    font-size: 20px;
+    font-weight: semi-bold;
+}
+
+.wrapper .container .box-donate .box-support .box-option input {
+    color: var(--text-color);
+    font-size: 20px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: hidden;
+    background-color: var(--secondary-color);
+}
+
+.wrapper .container .box-donate .box-support .box-option input:hover {
+    color: var(--secondary-color);
+    background-color: var(--text-color);
+}
+
+.wrapper .container .box-donate .tombol-donate {
+    font-size: 20px;
+    width: 20%;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border-color: var(--secondary-color);
+    border-style: solid;
+}
+
+.wrapper .container .box-donate .tombol-donate:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    background-color: var(--secondary-color);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: var(--text-color);
+    font-weight: semi-bold;
+}
